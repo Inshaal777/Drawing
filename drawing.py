@@ -20,7 +20,7 @@ class DrawingApp:
         self.thickness_lable = tk.Label(root, text="Thickness")
         self.thickness_lable.pack(side=tk.Left, padx=10)
         
-        self.thickness_var = tl.IntVar()
+        self.thickness_var = tk.IntVar()
         self.thickness_var.set(2)
 
         self.thickness_entry = tk.Entry(root, textvariable=self.thickness_var)
