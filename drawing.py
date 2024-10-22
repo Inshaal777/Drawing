@@ -9,22 +9,22 @@ class DrawingApp:
         self.canvas.pack(Fill=tk.BOTH, expand=True)
 
         self.color_lable = tk.Label(root, text="Color:")
-        self.color_lable.pack(side=tk.Left, padx=10)
+        self.color_lable.pack(side=tk.LEFT, padx=10)
 
         self.color_var = tk.StringVar()
         self.color_var.set("black")
 
         self.color_entry = tk.Entry(root, textvariable=self.color_var)
-        self.color_entry.pack(side=tk.Left, padx=10)
+        self.color_entry.pack(side=tk.LEFT, padx=10)
 
         self.thickness_lable = tk.Label(root, text="Thickness")
-        self.thickness_lable.pack(side=tk.Left, padx=10)
+        self.thickness_lable.pack(side=tk.LEFT, padx=10)
         
         self.thickness_var = tk.IntVar()
         self.thickness_var.set(2)
 
         self.thickness_entry = tk.Entry(root, textvariable=self.thickness_var)
-        self.thickness_entry.pack(side=tk.Left, padx=10)
+        self.thickness_entry.pack(side=tk.LEFT, padx=10)
 
         self.clear_button = tk.Button(root, text="Clear canvas", command=self.clear_canvas)
         self.clear_button.pack(side=tk.LEFT, padx=10)
